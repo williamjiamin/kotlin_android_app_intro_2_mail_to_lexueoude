@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">helloworld_new</string>
-    <string name="logo_description">this is the logo description</string>
+    <string name="app_name">乐学偶得</string>
+    <string name="str_title">请输入邮件标题…</string>
+    <string name="str_to">请输入收件人邮箱…</string>
+    <string name="str_containing_text">请输入邮件的主体内容…</string>
+    <string name="str_send">发送邮件</string>
+    <string name="img_description">dog img</string>
+
 </resources>

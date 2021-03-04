@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/lexueoude_image"
+        android:contentDescription="@string/img_description" />
+
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/logo_description"
-        app:srcCompat="@drawable/logo" />
-</RelativeLayout>
+        android:autofillHints="title"
+        android:hint="@string/str_title"
+        android:textSize="@dimen/font_thirty"
+        style="@style/edit_text_styling" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:hint="@string/str_to"
+        style="@style/edit_text_styling" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:importantForAutofill="no"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:hint="@string/str_containing_text"
+        style="@style/edit_text_styling"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_send"
+        android:layout_margin="@dimen/margin_sixteen"
+        />
+</LinearLayout>

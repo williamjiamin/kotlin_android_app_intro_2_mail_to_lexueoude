@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edit_text_styling">
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_margin">@dimen/margin_sixteen</item>
+    </style>
+</resources>
